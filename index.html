@@ -14,7 +14,7 @@
     <header class="header">
         <nav class="nav-container">
             <div class="logo">
-                <a href="#home">SIBIN</a>
+                <a href="#home" >SIBIN</a>
             </div>
             
             <div class="nav-right" style="color: rgb(237, 238, 240);">
@@ -43,16 +43,22 @@
         <div class="hero-content">
             <h1 class="glitch" data-text="Pranesh J S" style="color: azure;">Sibin B</h1>
             <p class="typewriter">SOFTWARE ENGINEER</p>
-            <p class="hero-description" style="color: azure;">
-                3rd year Student at Sri Krishna College of Engineering and Technology, specializing in Artificial Intelligence and Data Science. Passionate about Data Structures and Algorithms with proficiency in Java, C++, and web technologies (HTML, CSS, JavaScript,Reactjs). Active problem solver with 80+ solutions on LeetCode.
-            </p>
+            <h4 class="hero-description" style="color: azure;">
+                3rd year Student at Sri Krishna College of Engineering and Technology, specializing in Artificial Intelligence and Data Science. Passionate about Data Structures and Algorithms with proficiency in Java, C++, and web technologies (HTML, CSS, JavaScript,Reactjs). Active problem solver with 100+ solutions on LeetCode.
+            </h4>
             <div class="social-links">
-                <a href="https://github.com/sibin-01" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/sibin-b-1507762a0//" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:sibin230805@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/sibin-01" target="_blank" class="glow-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/sibin-b-1507762a0//" target="_blank" class="glow-icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:sibin230805@gmail.com" class="glow-icon">
+                    <i class="fas fa-envelope"></i>
+                </a>
             </div>
-            <br>
-            <a href="" target="_blank" class="btn">View CV</a>
+            <br><br><br>
+            <a href="" target="_blank" class="btn cv-gradient">View CV</a>
         </div>
     </section>
     <section id="education" class="education">
@@ -105,64 +111,36 @@
         <div class="profile-container">
             <!-- LeetCode Card -->
             <div class="profile-card leetcode">
-            <div class="card-header">
-                    <i class="fas fa-code" style="color: rgb(21, 26, 26);"></i>
-                    <h3 style="color:black">LeetCode</h3>
-                    <a href="https://leetcode.com/u/sibin_01/" target="_blank">
-                        <i class="fas fa-external-link-alt"></i>
-                    </a>
-                </div>
-                <div class="stats-grid">
-                    <div class="stat-item">
-                        <span class="stat-label">Problems Solved</span>
-                        <span class="stat-value" id="leetcode-solved">Loading...</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-label">Success Rate</span>
-                        <span class="stat-value" id="leetcode-rate">Loading...</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-label">Easy</span>
-                        <span class="stat-value" id="leetcode-easy">Loading...</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-label">Medium</span>
-                        <span class="stat-value" id="leetcode-medium">Loading...</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-label">Hard</span>
-                        <span class="stat-value" id="leetcode-hard">Loading...</span>
-                    </div>
-                </div>
-            </div>
-    
-            <!-- GeeksforGeeks Card -->
-            <!-- <div class="profile-card gfg">
                 <div class="card-header">
-                    <i class="fas fa-laptop-code" style="color: rgb(77, 174, 98);"></i>
-                    <h3 style="color: black;">GeeksforGeeks</h3>
-                    <a href="https://www.geeksforgeeks.org/user/pranesh1905/" target="_blank">
-                        <i class="fas fa-external-link-alt"></i>
-                    </a>
-                </div>
-                <div class="stats-grid">
-                    <div class="stat-item">
-                        <span class="stat-label">Problems Solved</span>
-                        <span class="stat-value" id="gfg-solved">Loading...</span>
+                        <i class="fas fa-code" style="color: rgb(21, 26, 26);"></i>
+                        <h3 style="color:black">LeetCode</h3>
+                        <a href="https://leetcode.com/u/sibin_01/" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
                     </div>
-                    <div class="stat-item">
-                        <span class="stat-label">Coding Score</span>
-                        <span class="stat-value" id="gfg-score">Loading...</span>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-label">Problems Solved</span>
+                            <span class="stat-value" id="leetcode-solved">Loading...</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Success Rate</span>
+                            <span class="stat-value" id="leetcode-rate">Loading...</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Easy</span>
+                            <span class="stat-value" id="leetcode-easy">Loading...</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Medium</span>
+                            <span class="stat-value" id="leetcode-medium">Loading...</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Hard</span>
+                            <span class="stat-value" id="leetcode-hard">Loading...</span>
+                        </div>
                     </div>
-                    <div class="stat-item">
-                        <span class="stat-label">Last Updated</span>
-                        <span class="stat-value" id="gfg-last-updated">Never</span>
-                    </div>
-                </div>
-                <button onclick="updateGFGStatsHandler()" class="update-btn">
-                    Update Stats
-                </button>
-            </div> -->
+            </div>
         </div>
     </section>
     
@@ -592,42 +570,21 @@
 <!-- </section> -->
     <!-- Leadership Section -->
 <section id="contact" class="contact">
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Sibin B</h3>
-                <p>Aspiring AI & Data Science Engineer</p>
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/sibin-b-1507762a0//"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/sibin-01"><i class="fab fa-github"></i></a>
-                    <a href="https://leetcode.com/u/sibin_01/"><i class="fas fa-code"></i></a>
-                </div>
-                    <p>Phone: <a href="tel:+916381597822" style="color: white; text-decoration: none;">6381597822</a></p>
-                    <p>Email: <a href="mailto:sibin230805@gmail.com" style="color: white; text-decoration: none;">sibin230805@gmail.com</a></p>
-                </div>
-            <div class="footer-section">
-                <h4>Quick Links</h4>
-                <div class="footer-links">
-                    <a href="#home">Home</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#achievements">Achievements</a>
-                    <a href="#contact">Contact</a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Sibin B. All rights reserved.</p>
-        </div>
-        <button id="back-to-top" title="Back to top">
-            <i class="fas fa-arrow-up"></i>
-        </button>
-    </footer>
-</main>
-
-<button id="scrollToTopBtn" title="Go to top">
-    <i class="fas fa-arrow-up"></i>
-</button>
+    <div class="contact-card">
+      <!-- <h1> CONTACT </h1> -->
+    <div class="contact-name">Sibin B</div>
+    <div class="contact-role">Aspiring AI &amp; Data Science Engineer</div>
+    <div class="contact-social">
+      <a href="https://github.com/sibin-01" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://leetcode.com/u/sibin_01/" target="_blank"><i class="fas fa-code"></i></a>
+      <a href="mailto:sibin230805@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+    <div class="contact-info">
+      <div><i class="fas fa-phone"></i> <a href="tel:+916381597822">6381597822</a></div>
+      <div><i class="fas fa-envelope"></i> <a href="mailto:sibin230805@gmail.com">sibin230805@gmail.com</a></div>
+    </div>
+  </div>
+</section>
     <!-- Scripts -->
     <script src="theme.js"></script>
     <script src="nav.js"></script>
@@ -640,6 +597,28 @@
 
     <script>
       emailjs.init("YOUR_PUBLIC_KEY"); // Initialize with your EmailJS public key
+    </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const themeToggle = document.getElementById('theme-toggle');
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        document.body.classList.add(`${currentTheme}-theme`);
+
+        themeToggle.checked = currentTheme === 'dark';
+
+        themeToggle.addEventListener('change', () => {
+          document.body.classList.toggle('dark-theme');
+          document.body.classList.toggle('light-theme');
+          const newTheme = document.body.classList.contains('dark-theme') ? 'dark' : 'light';
+          localStorage.setItem('theme', newTheme);
+        });
+      });
+    </script>
+   
+</body>
+</html>
+      <!-- emailjs.init("YOUR_PUBLIC_KEY"); // Initialize with your EmailJS public key -->
     </script>
 
     <script>
