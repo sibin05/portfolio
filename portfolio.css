@@ -409,12 +409,16 @@ section {
 
 .skill-category {
   background: var(--card-bg);
-  border-radius: 15px;
-  padding: 2rem;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  /* border-radius: 5px; */
+  padding: 1rem;
+  /* box-shadow: 0 4px 6px rgba(0,0,0,0.1); */
   transition: all 0.3s ease;
-  border: 1px solid var(--border-color);
+  /* border: 1px solid var(--border-color); */
   position: relative;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .skill-category:hover {
@@ -427,15 +431,15 @@ section {
 .skill-category h3 {
   color: #0984e3;
   font-size: 1.5rem;
-  margin-bottom: 1.5rem;
-  border-bottom: 2px solid #0984e3;
-  padding-bottom: 0.5rem;
+  /* margin-bottom: 1.5rem; */
+  /* border-bottom: 2px solid #0984e3; */
+  /* padding-bottom: 0.5rem; */
 }
 
 .skill-category li {
   color: #555e61;
-  padding: 0.8rem 0;
-  border-bottom: 1px solid #eee;
+  /* padding: 0.8rem 0; */
+  /* border-bottom: 1px solid #eee; */
   transition: all 0.3s ease;
 }
 
@@ -476,7 +480,7 @@ section {
 
 .skill-category li:hover {
   color: #0984e3;
-  padding-left: 1rem;
+  /* padding-left: 1rem; */
   background: linear-gradient(90deg, rgba(9,132,227,0.1) 0%, rgba(9,132,227,0) 100%);
 }
 
@@ -621,17 +625,19 @@ body.dark-theme .project-card {
 }
 
 .skills-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  max-width: 100vw;
   margin: 0 auto;
+  padding: 0;
 }
 
 .skill-category {
   background: white;
   /* padding: 2rem; */
-  border-radius: 10px;
+  border-radius: 15px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
 }
@@ -642,8 +648,8 @@ body.dark-theme .project-card {
 
 .skill-category h3 {
   color: #007bff;
-  margin-bottom: 1.5rem;
-  padding-bottom: 0.5rem;
+  /* margin-bottom: 1.5rem; */
+  /* padding-bottom: 0.5rem; */
   border-bottom: 2px solid #007bff;
 }
 
@@ -655,7 +661,8 @@ body.dark-theme .project-card {
 .skill-category li {
   padding: 0.5rem 0;
   position: relative;
-  padding-left: 1.5rem;
+  padding-left: 2rem;
+  /* padding-right: 1rem; */
   transition: color 0.3s ease;
 }
 
