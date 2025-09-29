@@ -590,9 +590,17 @@ section {
     grid-template-columns: 1fr;
     gap: 1.2rem;
     padding: 1rem 0;
+    width: 100%;
   }
   .project-card {
     padding: 1.2rem;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+  .project-content {
+    padding: 0;
+    width: 100%;
   }
 }
 
