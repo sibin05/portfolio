@@ -22,7 +22,8 @@ function handleLeetCodeError() {
     const errorText = 'Error loading';
     const elements = ['solved', 'rate', 'easy', 'medium', 'hard'];
     elements.forEach(id => {
-        document.getElementById(`leetcode-${id}`).textContent = errorText;
+        const el = document.getElementById(`leetcode-${id}`);
+        if (el) el.textContent = errorText;
     });
 }
 
@@ -53,14 +54,19 @@ function updateGFGStats(problemsSolved, codingScore) {
 
 function displayGFGStats() {
     const stats = getGFGStats();
-    document.getElementById('gfg-solved').textContent = stats.problemsSolved;
-    document.getElementById('gfg-score').textContent = stats.codingScore;
+    const solvedEl = document.getElementById('gfg-solved');
+    const scoreEl = document.getElementById('gfg-score');
+    const updatedEl = document.getElementById('gfg-last-updated');
+
+    if (solvedEl) solvedEl.textContent = stats.problemsSolved;
+    if (scoreEl) scoreEl.textContent = stats.codingScore;
     
-    const lastUpdated = new Date(stats.lastUpdated).toLocaleString();
-    if (document.getElementById('gfg-last-updated')) {
-        document.getElementById('gfg-last-updated').textContent = `Last updated: ${lastUpdated}`;
+    if (updatedEl) {
+        const lastUpdated = new Date(stats.lastUpdated).toLocaleString();
+        updatedEl.textContent = `Last updated: ${lastUpdated}`;
     }
 }
+
 function shouldRefreshGFGStats() {
     const stats = getGFGStats();
     if (!stats.lastUpdated) return true;
@@ -69,17 +75,20 @@ function shouldRefreshGFGStats() {
     const now = new Date();
     const hoursSinceUpdate = (now - lastUpdate) / (1000 * 60 * 60);
     
-    return hoursSinceUpdate >= 24; // Refresh if last update was 24+ hours ago
+    return hoursSinceUpdate >= 24;
 }
 
 function autoRefreshGFGStats() {
     if (shouldRefreshGFGStats()) {
-        document.getElementById('gfg-solved').textContent = 'Needs update';
-        document.getElementById('gfg-score').textContent = 'Needs update';
-        document.getElementById('gfg-last-updated').textContent = 'Please update stats';
+        const solvedEl = document.getElementById('gfg-solved');
+        const scoreEl = document.getElementById('gfg-score');
+        const updatedEl = document.getElementById('gfg-last-updated');
+        
+        if (solvedEl) solvedEl.textContent = 'Needs update';
+        if (scoreEl) scoreEl.textContent = 'Needs update';
+        if (updatedEl) updatedEl.textContent = 'Please update stats';
     }
 }
-
 
 // Manual update handler for GFG
 window.updateGFGStatsHandler = function() {
@@ -104,7 +113,3 @@ function initializeStats() {
 
 // Event Listeners
 document.addEventListener('DOMContentLoaded', initializeStats);
-
-// Export functions
-window.fetchLeetCodeStats = fetchLeetCodeStats;
-window.updateGFGStats = updateGFGStats;
